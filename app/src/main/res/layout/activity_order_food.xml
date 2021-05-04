@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".OrderFood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/shaperelinear"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="Order Placement"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/orderImage"
+                android:layout_width="120dp"
+                android:src="@drawable/ico"
+                android:layout_height="120dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/orderedFood"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:text="Chicken"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/orderedAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:text="1000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:text="Confirm Payment"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_radius"/>
+
+        <ProgressBar
+            android:id="@+id/progressReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/receipt"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
